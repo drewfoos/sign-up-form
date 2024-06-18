@@ -26,6 +26,7 @@ img.background {
 .logo > span {
   color: white;
   font-size: 5rem;
+  font-family: norse-bold;
 }
 
 .left {

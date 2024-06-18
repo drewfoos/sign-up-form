@@ -1,0 +1,159 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(public/font/Norse-Bold.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: norse-bold, sans-serif;
+}
+
+img.background {
+  height: 100vh;
+  z-index: -1;
+}
+
+.logo img {
+  width: 15%;
+}
+
+.logo > span {
+  color: white;
+  font-size: 5rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  position: relative;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 65vw;
+}
+
+h1 {
+  width: 70%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+cite {
+  position: absolute;
+  width: 100%;
+  bottom: 1%;
+  color: white;
+  text-align: center;
+}
+
+cite > a {
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dark-bg {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vw;
+}
+
+.logo + span {
+  color: white;
+  font-size: 5rem;
+}
+
+.form-container {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  gap: 20px;
+  margin-left: 30px;
+  max-width: 50vw;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(50% - 10px);
+}
+
+.form-field label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-field input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.form-field input:invalid {
+  border-color: red;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #596d48;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 50px;
+}
+
+.right > p {
+  margin-left: 50px;
+}
+
+.right > p > a {
+  color: #596d48;
+  text-decoration: none;
+}
